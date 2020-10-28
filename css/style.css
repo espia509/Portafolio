@@ -127,6 +127,7 @@ p {
 .btn {
   background-color: var(--choco);
   padding: 1rem 4rem;
+  text-decoration: none;
   display: inline-block;
   margin-top: 1rem;
   color: white;
