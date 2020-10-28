@@ -69,6 +69,7 @@ p{
     }
 .site-header nav a:last-of-type{
   margin-bottom: 0;
+  }
 }
 @media (min-width: 768px){
   .site-header nav a{
