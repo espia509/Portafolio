@@ -4,88 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portafolio</title>
-  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/style.css">
+  <!--Normalize-->
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--CSS Custom-->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+  <!--Scroll-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Portafolio</title>
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="animate__animated animate__backInLeft">
-      <a href="#">Inicio</a>
-      <a href="https://espia509.github.io/cafe/">Cafetería</a>
-      <a href="https://lucid-thompson-8a8a63.netlify.app">Bienes raices</a>
-    </nav>
-  </header>
-  <div class="hero">
-    <div class="contenedor-hero">
-      <h1>Desarrollador Web <i class="fas fa-laptop-code"></i></h1>
-      <p><i class="fas fa-map-marker-alt"></i>Ixtapaluca, Edo. Mex.</p>
-      <a href="#" class="btn">Contactar</a>
+  <!--Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top animate__animated animate__bounceIn">
+    <div class="container">
+      <div class="porta">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#header">¿Quién soy?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sect">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tec">Tecnologías</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="contenedor">
-    <main class="servicios">
-      <h2>Servicios</h2>
-      <div class="contenedor-servi">
-        <div class="servicio">
-          <h3>Diseño web</h3>
-          <div class="iconos">
-            <i class="far fa-file-code"></i>
+  </nav>
+
+  <!--Header-->
+  <header id="header">
+    <div class="conteiner-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <div class="header-content-left ml-5">
+            <img src="img/img1.png" alt="devi" style="width:75%;">
           </div>
-          <p>Adapto las necesidades del cliente a medida, usando las tecnologías que sean solicitadas.</p>
         </div>
-        <div class="servicio">
-          <h3>Responsive</h3>
-          <div class="iconos">
-            <i class="fab fa-css3-alt"></i>
+        <div class="col-md-6 my-4">
+          <div class="header-content-right mr-5 ml-5">
+            <h1>¿Quién soy?</h1><br>
+            <p>Mi nombre es Daniel Gonzalez Escalante, soy egresado de la carrera de Ingeniería en TIC's (Tecnologías de
+              la Información y Comunicaciones) y estoy en proceso para obtener mi titulo.</p>
+            <p>Actualmente me encuentro mejorando mis habilidades y conocimientos en el desarrollo web.</p>
           </div>
-          <p>Diseño web resposivo, ya sea con freamework como bootstrap o completamente desde 0.</p>
-        </div>
-        <div class="servicio">
-          <h3>Capacitación Constatne</h3>
-          <div class="iconos">
-            <i class="fas fa-book-reader"></i>
-          </div>
-          <p>Me encuentro en capacitación constante para ofrecer mis mejores conocimientos al cliente.</p>
         </div>
       </div>
-    </main>
-    <section id="contacto" class="contacto">
-      <h2>Contacto</h2>
-      <div class="ojo">
-        <p>*Solo es estetico, no tiene función</p>
+    </div>
+  </header>
+
+  <!--Section-->
+  <main id="sect">
+    <div class="container my-4">
+      <p class="h1 mb-2">Proyectos</p>
+      <div class="row">
+        <p class="m-auto">En esta sección muestro algunos de mis proyectos que he realizado.</p>
       </div>
-      <form action="#">
-        <legend>Contactanos llenando todos los campos</legend>
-        <div class="contenedor-campos">
-          <div class="campos">
-            <label>Nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre">
+      <div class="row mt-5">
+        <div class="col">
+          <p class="h2">Proyecto Cafetería</p>
+          <a href="https://espia509.github.io/cafe/">
+            <img src="img/imgcaf.png" alt="caf">
+          </a>
+        </div>
+        <div class="col">
+          <p class="h2">Proyecto BienesRaíces</p>
+          <a href="https://vigilant-gates-2c7c00.netlify.app">
+            <img src="img/imgbie.png" alt="bien">
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="tec" class="colors">
+    <div class="container my-4">
+      <p class="h1 mb-2">Tecnologías</p>
+      <div class="row">
+        <p class="m-auto">Esta son las tecnologías que manejo actualmente, me sigo capacidando para mejorar y aprender
+          las nuevas tecnologías del mercado.</p>
+        <div class="col mt-4 icono">
+          <p class="h3">HTML</p>
+          <i class="fab fa-html5"></i>
+          </a>
+        </div>
+        <div class="col mt-4 icono">
+          <p class="h3">CSS</p>
+          <i class="fab fa-css3-alt"></i>
+          </a>
+        </div>
+        <div class="col mt-4 icono">
+          <p class="h3">Bootstrap</p>
+          <i class="fab fa-bootstrap"></i>
+          </a>
+        </div>
+        <div class="col mt-4 icono">
+          <p class="h3">JavaScript</p>
+          <i class="fab fa-js-square"></i>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col mt-4 icono">
+            <p class="h3">PHP</p>
+            <i class="fab fa-php"></i>
+            </a>
           </div>
-          <div class="campos">
-            <label>Teléfono</label>
-            <input type="tel" name="nombre" placeholder="Teléfono">
+          <div class="col mt-4 icono">
+            <p class="h3">Python</p>
+            <i class="fab fa-python"></i>
+            </a>
           </div>
-          <div class="campos w-100">
-            <label>Correo</label>
-            <input type="email" name="nombre" placeholder="Correo">
+          <div class="col mt-4 icono">
+            <p class="h3">MYSQL</p>
+            <i class="fas fa-database"></i>
+            </a>
           </div>
-          <div class="campos w-100">
-            <label>Mensaje</label>
-            <textarea name="name" rows="6" cols="75"></textarea>
+          <div class="col mt-4 icono">
+            <p class="h3">GIT</p>
+            <i class="fab fa-git-alt"></i>
+            </a>
           </div>
         </div>
-        <div class="enviar">
-          <input type="submit" class="btn" value="Enviar">
+        <div class="row">
         </div>
-      </form>
-    </section>
-  </div>
+        <div class="col mt-4 icono">
+          <p class="h3">Github</p>
+          <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="navbar">
+
+    </div>
+  </footer>
+
+  <!--Sript Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
   <script src="https://kit.fontawesome.com/775d99ea06.js" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
